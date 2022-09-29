@@ -1,17 +1,32 @@
+@font-face {
+    font-family: 'kionaI';
+    src: url('../fontes/Kiona-Itallic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'cinzelR';
+    src: url('../fontes/Cinzel-Regular.otf') format('OpenType');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
     margin: 0;
-    padding: 0;
+    padding: 0; 
 }
 
 header {
     position: fixed;
     display: flex;
+    background-color: rgb(235, 220, 220);;
     justify-content: space-between;
     align-items: center;
     width: 100%;
     height: 10vh;
+    border: 1px solid rgba(0, 0, 0, 0.062);;
     overflow: hidden;
-    background-color: rgb(0, 0, 85);
 }
 
 .box-1 {
@@ -19,26 +34,31 @@ header {
 }
 
 .menu-box-1 {
-    background-color: black;
-    width: 7vw;
+    background-color: rgb(235, 220, 220);
+    width:7vw;
     height: 10vh;
+    border-right: 1px solid rgba(0, 0, 0, 0.062);
 }
 
 .menu-box-1 button {
     position: relative;
+    background: none;
+    font-family: 'cinzelR', sans-serif;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    border: none;
+    cursor: pointer;
 }
 
 .choose-team {
-    background-color: rgb(255, 163, 163);
+    background-color: rgb(235, 220, 220);
     width: 11vw;
-    height: 10vh;   
+    height: 10vh; 
 }
 
 .select-team {
-    background-color: white;
+    background-color: rgba(0, 0, 0, 0.062);
     position: relative;
     display: flex;
     align-items: center;
@@ -81,7 +101,8 @@ header {
 }
 
 .box-2 {
-    background-color: blueviolet;
+    background-color: rgb(235, 220, 220);
+    font-family: 'kionaI', sans-serif;
 }
 
 .box-3 {
@@ -89,15 +110,15 @@ header {
 }
 
 .settings-nav {
-    background-color: rgb(255, 163, 163);
+    background-color: rgb(235, 220, 220);
     width: 11vw;
     height: 10vh;
 }
 
 .search-header {
-    background-color: white;
     position: relative;
     display: flex;
+    background-color: rgba(0, 0, 0, 0.062);
     float: right;
     justify-content: center;
     align-items: center;
@@ -120,7 +141,7 @@ header {
 }
 
 .search-header img {
-    width: 30px;
+    width: 25px;
 }
 
 .search-header input {
@@ -138,28 +159,38 @@ header {
     transition: .5s;
 }
 
+.conf {
+    background-color: rgb(235, 220, 220);
+    width: 7vw;
+    height: 10vh;
+    border-left: 1px solid rgba(0, 0, 0, 0.062);
+}
+
 .conf button {
     position: relative;
+    background: none;
+    font-family: 'cinzelR', sans-serif;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-}
-
-.conf {
-    background-color: rgb(87, 37, 37);
-    width: 7vw;
-    height: 10vh;
+    border: none;
+    cursor: pointer;
 }
 
 .leagues {
-    background-color: black;
+    background-color: rgb(235, 220, 220);
     width: 7vw;
     height: 10vh;
+    border-left: 1px solid rgba(0, 0, 0, 0.062);
 }
 
 .leagues button {
     position: relative;
+    background: none;
+    font-family: 'cinzelR', sans-serif;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    border: none;
+    cursor: pointer;
 }
