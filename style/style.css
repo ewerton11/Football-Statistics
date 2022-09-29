@@ -9,8 +9,8 @@ header {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    height: 14vh;
-    overflow: auto;
+    height: 10vh;
+    overflow: hidden;
     background-color: rgb(0, 0, 85);
 }
 
@@ -21,7 +21,7 @@ header {
 .menu-box-1 {
     background-color: black;
     width: 7vw;
-    height: 14vh;
+    height: 10vh;
 }
 
 .menu-box-1 button {
@@ -34,7 +34,7 @@ header {
 .choose-team {
     background-color: rgb(255, 163, 163);
     width: 11vw;
-    height: 14vh;   
+    height: 10vh;   
 }
 
 .select-team {
@@ -91,7 +91,7 @@ header {
 .settings-nav {
     background-color: rgb(255, 163, 163);
     width: 11vw;
-    height: 14vh;
+    height: 10vh;
 }
 
 .search-header {
@@ -99,6 +99,7 @@ header {
     position: relative;
     display: flex;
     float: right;
+    justify-content: center;
     align-items: center;
     top: 50%;
     right: 10px;
@@ -122,7 +123,7 @@ header {
     width: 30px;
 }
 
-.input-search {
+.search-header input {
     background: none;
     border: none;
     outline: none;
@@ -147,13 +148,13 @@ header {
 .conf {
     background-color: rgb(87, 37, 37);
     width: 7vw;
-    height: 14vh;
+    height: 10vh;
 }
 
 .leagues {
     background-color: black;
     width: 7vw;
-    height: 14vh;
+    height: 10vh;
 }
 
 .leagues button {
