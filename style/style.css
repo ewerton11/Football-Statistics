@@ -11,22 +11,25 @@
     font-weight: normal;
     font-style: normal;
 }
+* {
+    margin: 0;
+    padding: 0;
+}
 
 body {
-    margin: 0;
-    padding: 0; 
+    background-color: white; 
 }
 
 header {
+    background-color: rgb(255, 255, 255);
     position: fixed;
     display: flex;
-    background-color: rgb(235, 220, 220);
     justify-content: space-between;
     align-items: center;
     top: 0;
     width: 100%;
     height: 10vh;
-    border: 1px solid rgba(0, 0, 0, 0.062);
+    border: 1px solid rgba(0, 0, 0, 0.137);
     z-index: 5;
     overflow: hidden;
 }
@@ -36,10 +39,10 @@ header {
 }
 
 .menu-box-1 {
-    background-color: rgb(235, 220, 220);
+    background-color: rgb(255, 255, 255);
     width:7vw;
     height: 10vh;
-    border-right: 1px solid rgba(0, 0, 0, 0.062);
+    border-right: 1px solid rgba(0, 0, 0, 0.137);
 }
 
 .menu-box-1 button {
@@ -54,13 +57,12 @@ header {
 }
 
 .choose-team {
-    background-color: rgb(235, 220, 220);
+    background-color: rgb(255, 255, 255);
     width: 11vw;
     height: 10vh; 
 }
 
 .select-team {
-    background-color: rgba(0, 0, 0, 0.062);
     position: relative;
     display: flex;
     align-items: center;
@@ -69,6 +71,8 @@ header {
     transform: translate(0, -50%);
     width: 2.5vw;
     height: 5vh;
+    border-right: 5px solid rgba(0, 0, 0, 0.137);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.137);
     border-radius: 40px;
     cursor: pointer;
     transition: .5s;
@@ -104,7 +108,7 @@ header {
 }
 
 .box-2 {
-    background-color: rgb(235, 220, 220);
+    background-color: rgb(255, 255, 255);
     font-family: 'kionaI', sans-serif;
     cursor: pointer;
 }
@@ -114,7 +118,7 @@ header {
 }
 
 .settings-nav {
-    background-color: rgb(235, 220, 220);
+    background-color: rgb(255, 255, 255);
     width: 11vw;
     height: 10vh;
 }
@@ -122,7 +126,6 @@ header {
 .search-header {
     position: relative;
     display: flex;
-    background-color: rgba(0, 0, 0, 0.062);
     float: right;
     justify-content: center;
     align-items: center;
@@ -131,6 +134,8 @@ header {
     transform: translate(0, -50%);
     width: 2.5vw;
     height: 5vh;
+    border-left: 5px solid rgba(0, 0, 0, 0.137);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.137);
     border-radius: 40px;
     cursor: pointer;
     transition: .5s;
@@ -165,10 +170,10 @@ header {
 }
 
 .conf {
-    background-color: rgb(235, 220, 220);
+    background-color: rgb(255, 255, 255);
     width: 7vw;
     height: 10vh;
-    border-left: 1px solid rgba(0, 0, 0, 0.062);
+    border-left: 1px solid rgba(0, 0, 0, 0.137);
 }
 
 .conf button {
@@ -183,10 +188,10 @@ header {
 }
 
 .leagues {
-    background-color: rgb(235, 220, 220);
+    background-color: rgb(255, 255, 255);
     width: 7vw;
     height: 10vh;
-    border-left: 1px solid rgba(0, 0, 0, 0.062);
+    border-left: 1px solid rgba(0, 0, 0, 0.137);
 }
 
 .leagues button {
@@ -216,16 +221,17 @@ header {
 }
 
 #x-menu:hover {
-    background-color: rgb(109, 221, 184);  
+    background-color: rgba(0, 0, 0, 0.103);  
 }
 
 .nav-menu.active {
+    background-color: rgb(255, 255, 255);
     position: fixed;
-    background-color: aquamarine;
     top: 10vh;
     transform: translateX(0%);
     width: 30%;
     height: 90vh;
+    border: 1px solid rgba(0, 0, 0, 0.137);
     overflow: auto;
 }
 
@@ -239,7 +245,7 @@ header {
     width: 100%;
     height: 100%;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-ar;
 }
 
 .nav-menu.active li {
@@ -255,6 +261,7 @@ header {
     width: 30%;
     height: 90vh;
     transition: .5s;
+    border: 1px solid rgba(0, 0, 0, 0.137);
     overflow: auto;
 }
 
@@ -277,7 +284,7 @@ header {
 }
 
 .first-section {
-    background: #FFFFFF url("../imagens/img-fundo.jpg") no-repeat right top fixed;
+    background: white url("../imagens/img-fundo.jpg") no-repeat right top fixed;
     position: absolute;
     width: 100%;
     height: 50vh;
@@ -325,23 +332,70 @@ header {
     position: absolute;
     top: 70%;
     width: 100%;
-    height: 600px;
+    height: 800px;
 }
 
+.first-main {
+    background-color: #FFFFFF;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    width: 90%;
+    height: 90%;
+}
 
+.first-article {
+    background-color: blue;
+    position: absolute;
+    display: flex;
+    overflow-x: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    width: 90%;
+    height: 90%;
+}
 
+#table-1 {
+    background-color: cadetblue;
+    position: absolute;
+    top: 50%;
+    left: -60%;
+    transform: translate(0% , -50%);
+    width: 70%;
+    height: 90%;
+    border: 1px solid #FFFFFF;
+}
 
+#table-2 {
+    background-color: cadetblue;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    width: 70%;
+    height: 90%;
+    border: 1px solid #FFFFFF;
+}
 
-
-
-
+#table-3 {
+    background-color: cadetblue;
+    position: absolute;
+    top: 50%;
+    left: 90%;
+    transform: translate(0% , -50%);
+    width: 70%;
+    height: 90%;
+    border: 1px solid #FFFFFF;
+}
 
 
 
 h3 {
     position: absolute;
     left: 600px;
-    top: 500px;
+    top: 1500px;
     height: 1000px;
     background-color: blueviolet;
 }
