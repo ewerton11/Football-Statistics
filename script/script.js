@@ -1,9 +1,11 @@
-let menu = document.querySelector('.menu-box-1')
-let navmenu = document.querySelector('#nav-menu')
-let xmenu = document.querySelector('#x-menu')
+let menu = document.querySelector('.menu-box-1');
+let navmenu = document.querySelector('#nav-menu');
+
 let logo = document.querySelector('.box-2');
 
-let count = 0;
+let colorMode = document.querySelector('.color-system');
+let dark = document.querySelector('.dark-mode');
+let clear = document.querySelector('.clear-mode');
 
 
 
@@ -16,6 +18,26 @@ menu.addEventListener('click' , ()=> {
     navmenu.classList.toggle("active");
 });
 
-xmenu.addEventListener('click' , ()=> {
-    navmenu.classList.toggle("active");
-})
+var i = 0
+
+colorMode.addEventListener('click' , function() {
+
+    let firstelement = document.querySelector('.color-mode');
+
+    if(i == 0) {
+
+        dark.style.display = 'none' ;
+        clear.style.display = 'block' ;
+        firstelement.textContent = 'Clear'
+
+        ++i
+
+    } else {
+
+        dark.style.display = 'block' ;
+        clear.style.display = 'none' ;
+        firstelement.textContent = 'Dark'
+
+        i = 0
+    }
+});
