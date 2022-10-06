@@ -48,12 +48,18 @@ header {
 .menu-box-1 button {
     position: relative;
     background: none;
-    font-family: 'cinzelR', sans-serif;
+    font-family: arial, sans-serif;
+    font-size: 16px;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
     border: none;
     cursor: pointer;
+    transition: .2s;
+}
+
+.menu-box-1 button:hover {
+    color: rgba(0, 0, 0, 0.774);
 }
 
 .choose-team {
@@ -169,22 +175,28 @@ header {
     transition: .5s;
 }
 
-.conf {
+.league {
     background-color: rgb(255, 255, 255);
     width: 7vw;
     height: 10vh;
     border-left: 1px solid rgba(0, 0, 0, 0.137);
 }
 
-.conf button {
+.league button {
     position: relative;
     background: none;
-    font-family: 'cinzelR', sans-serif;
+    font-family: arial, sans-serif;
+    font-size: 16px;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
     border: none;
     cursor: pointer;
+    transition: .2s;
+}
+
+.league button:hover {
+    color: rgba(0, 0, 0, 0.774);
 }
 
 .color-system {
@@ -220,13 +232,72 @@ header {
     display: none;
 }
 
-#nav-menu {
-    z-index: 5;
+.top-navbar {
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    border: 1px solid rgba(0, 0, 0, 0.137);
 }
 
-.nav-menu.active {
+.language {
+    background: none;
+    position: relative;
+    justify-content: space-around;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    width: 6vw;
+    height: 5vh;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.205);
+    transition: .5s;
+}
+
+.indicator { 
+    background: none;
+    border: none;
+    position: relative;
+    top: 2px;
+    right: 30px;
+}
+
+.language:hover {
+    border-bottom: 1px solid black;
+}
+
+.indicator p { 
+    font-family: 'kionaI', sans-serif;
+    font-size: 12px;
+}
+
+.language img {
+    position: relative;
+    float: left;
+    width: 30px;
+}
+
+.x-menu {
+    background: none;
+    border: none;
+    position: relative;
+    float: right;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 1vw;
+    width: 3vw;
+    height: 6vh;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.x-menu:hover {
+    background-color: rgba(0, 0, 0, 0.096);
+}
+
+.nav-menu.active , .nav-menu {
     background-color: rgb(255, 255, 255);
     position: fixed;
+    z-index: 5;
     top: 10vh;
     transform: translateX(0%);
     width: 30%;
@@ -235,62 +306,46 @@ header {
     overflow: auto;
 }
 
-.nav-menu.active ul {
+.nav-menu {
+    z-index: 5;
+    transform: translateX(-100%);
+    transition: .5s;
+}
+
+.nav-menu.active ul , .nav-menu ul {
     position: absolute;
-    display: flex;
+    display: block;
     margin: 0;
     padding: 0;
     list-style: none;
+    top: 50px;
     width: 100%;
     height: 100%;
     flex-direction: column;
 }
 
-.nav-menu.active li {
+.nav-menu.active li  , .nav-menu li {
+    position: relative;
     display: flex;
-    justify-content: center;
     align-items: center;
     width: 100%;
-    height: 100%;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.137);
-
+    height: 150px;
+    border: 1px solid rgba(0, 0, 0, 0.137);
 }
 
 .nav-menu.active li:hover {
-    background-color: rgba(0, 0, 0, 0.137);
+    background-color: rgba(0, 0, 0, 0.11);
 }
 
-.nav-menu {
-    background-color: rgb(255, 255, 255);
-    position: fixed;
-    top: 10vh;
-    transform: translateX(-100%);
-    width: 30%;
-    height: 90vh;
-    transition: .5s;
-    border: 1px solid rgba(0, 0, 0, 0.137);
-    overflow: auto;
-}
-
-.nav-menu ul {
-    position: absolute;
-    display: flex;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    width: 100%;
-    height: 100%;
-    flex-direction: column;
-}
-
-.nav-menu li {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.137);
-
+.nav-menu.active a , .nav-menu a {
+    position: relative;
+    text-decoration: none;
+    color: black;
+    font-family: arial, sans-serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    left: 30px;
 }
 
 .first-section {
