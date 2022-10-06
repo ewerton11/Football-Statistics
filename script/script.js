@@ -9,16 +9,12 @@ let team = document.querySelector('.choose-team');
 let logo = document.querySelector('.box-2');
 
 let settings = document.querySelector('.settings-nav');
-let league = document.querySelector('.conf');
+let league = document.querySelector('.league');
 
 let colorMode = document.querySelector('.color-system');
 let dark = document.querySelector('.dark-mode');
 let clear = document.querySelector('.clear-mode');
 
-
-logo.addEventListener('click' , ()=> {
-    document.location.reload(true);
-});
 
 menu.addEventListener('click' , ()=> {
     navmenu.classList.toggle("active");
@@ -28,6 +24,13 @@ xnavbar.addEventListener('click' , ()=> {
     navmenu.classList.toggle("active");
 });
 
+logo.addEventListener('click' , ()=> {
+    document.location.reload(true);
+});
+
+league.addEventListener('click' , ()=> {
+    console.log('clicou')
+});
 
 var i = 0
 
