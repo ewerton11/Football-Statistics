@@ -2,6 +2,7 @@ let body = document.querySelector('body');
 let header = document.querySelector('header');
 
 let menu = document.querySelector('.menu-box-1');
+let xnavbar = document.querySelector('.x-menu')
 let navmenu = document.querySelector('#nav-menu');
 let team = document.querySelector('.choose-team');
 
@@ -22,6 +23,11 @@ logo.addEventListener('click' , ()=> {
 menu.addEventListener('click' , ()=> {
     navmenu.classList.toggle("active");
 });
+
+xnavbar.addEventListener('click' , ()=> {
+    navmenu.classList.toggle("active");
+});
+
 
 var i = 0
 
