@@ -115,6 +115,9 @@ header {
 
 .box-2 {
     background-color: rgb(255, 255, 255);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
     font-family: 'kionaI', sans-serif;
     cursor: pointer;
 }
@@ -416,36 +419,74 @@ header {
     margin-top: 10vh;
 }
 
-.copa-br {
-    background-color: chartreuse;
+#content-top {
+    text-align: center;
+}
+
+#content-top h2 {
+    background-color: rgba(255, 255, 255, 0.199);
+    color: black;
     position: absolute;
-    width: 100px;
-    height: 100px;
+    font-family: 'kionaI';
+}
+
+circle {
+    fill: none;
+    stroke: black;
+    stroke-width: 10;
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+}
+
+.circle-1 {
+    position: absolute;
+    width: 160px;
+    height: 160px;
     top: 50%;
     left: 35%;
-    border-radius: 50%;
     transform: translate(-50% , -50%);
 }
 
-.brasileirao {
-    background-color: chartreuse;
+.circle-1 svg , .circle-2 svg , .circle-3 svg {
+    position: relative;
+    width: 160px;
+    height: 160px;
+}
+
+.c1-1 , .c2-1 , .c3-1 {
+    stroke-dashoffset: 0;
+    stroke: rgb(110, 110, 110);
+}
+
+.c1-2 , .c2-2 , .c3-2 {
+    stroke-dashoffset: calc(440 - 308);
+    stroke: yellow;
+}
+
+.circle-2 {
     position: absolute;
-    width: 100px;
-    height: 100px;
+    width: 160px;
+    height: 160px;
     top: 50%;
     left: 50%;
-    border-radius: 50%;
     transform: translate(-50% , -50%);
 }
 
-.libertadores {
-    background-color: chartreuse;
+.circle-3 {
     position: absolute;
-    width: 100px;
-    height: 100px;
+    width: 160px;
+    height: 160px;
     top: 50%;
     left: 65%;
-    border-radius: 50%;
+    transform: translate(-50% , -50%);
+}
+
+#c1 , #c2 , #c3 {
+    background-color: rgba(255, 255, 255, 0.199);
+    position: absolute;
+    font-size: 20px;
+    top: 50%;
+    left: 50%;
     transform: translate(-50% , -50%);
 }
 
