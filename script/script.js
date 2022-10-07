@@ -15,6 +15,14 @@ let colorMode = document.querySelector('.color-system');
 let dark = document.querySelector('.dark-mode');
 let clear = document.querySelector('.clear-mode');
 
+//segundas sessao
+
+let sectionleft = document.querySelector('.left-arrow');
+let sectionright = document.querySelector('.right-arrow')
+let firstTable = document.querySelector('#table-1')
+let mondayTable = document.querySelector('#table-2')
+let thirdTable = document.querySelector('#table-3')
+
 
 menu.addEventListener('click' , ()=> {
     navmenu.classList.toggle("active");
@@ -75,3 +83,23 @@ colorMode.addEventListener('click' , function() {
         colorMode.style.background = 'white'
     }
 });
+
+
+class NextSection {
+    constructor() {
+        this.left = document.querySelector('.left-arrow');
+        this.firstTable = document.querySelector('#table-1');
+
+
+        this.addClickEvent();
+    }
+
+    addClickEvent() {
+        this.left.addEventListener('click' , ()=> {
+        
+        });
+    }
+
+}
+
+new NextSection();

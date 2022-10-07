@@ -419,13 +419,33 @@ header {
     margin-top: 10vh;
 }
 
+.last-update {
+    position: absolute;
+    display: flex;
+    top: 5vh;
+    left: 2vw;
+}
+
+.last-update h2 {
+    color: rgb(255, 255, 255);
+    font-family: 'kionaI' , arial, sans-serif;
+    font-size: 16px;
+}
+
+#update-schedule {
+    color: #ffffff;
+    font-family: 'kionaI' , arial, sans-serif;
+    font-size: 16px;
+    padding: 0px 5px;
+}
+
 #content-top {
     text-align: center;
 }
 
 #content-top h2 {
     background-color: rgba(255, 255, 255, 0.199);
-    color: black;
+    color: rgb(0, 0, 0);
     position: absolute;
     font-family: 'kionaI';
 }
@@ -508,11 +528,32 @@ circle {
     height: 90%;
 }
 
+.left-arrow {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.left-arrow img {
+    width: 50px;
+}
+
+.right-arrow {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.right-arrow img {
+    width: 50px;
+}
+
 .first-article {
     background-color: blue;
     position: absolute;
-    display: flex;
-    overflow-x: hidden;
+    overflow-x: scroll;
     top: 50%;
     left: 50%;
     transform: translate(-50% , -50%);
@@ -524,8 +565,7 @@ circle {
     background-color: cadetblue;
     position: absolute;
     top: 50%;
-    left: -60%;
-    transform: translate(0% , -50%);
+    transform: translateY(-50%);
     width: 70%;
     height: 90%;
     border: 1px solid #FFFFFF;
@@ -535,8 +575,8 @@ circle {
     background-color: cadetblue;
     position: absolute;
     top: 50%;
-    left: 50%;
-    transform: translate(-50% , -50%);
+    left: 85%;
+    transform: translateY(-50%);
     width: 70%;
     height: 90%;
     border: 1px solid #FFFFFF;
@@ -546,7 +586,8 @@ circle {
     background-color: cadetblue;
     position: absolute;
     top: 50%;
-    left: 90%;
+    left: 170%;
+    margin-right: 2000px;
     transform: translate(0% , -50%);
     width: 70%;
     height: 90%;
