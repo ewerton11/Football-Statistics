@@ -552,7 +552,8 @@ circle {
 
 .first-article {
     background-color: blue;
-    position: absolute;
+    position: relative;
+    display: flex;
     overflow-x: scroll;
     top: 50%;
     left: 50%;
@@ -561,38 +562,18 @@ circle {
     height: 90%;
 }
 
-#table-1 {
-    background-color: cadetblue;
-    position: absolute;
+#table-1 , #table-2 , #table-3 {
+    background-color: blue;
+    position: relative;
     top: 50%;
     transform: translateY(-50%);
-    width: 70%;
+    min-width: 70%;
     height: 90%;
+    margin: 0px 15%;
     border: 1px solid #FFFFFF;
 }
 
-#table-2 {
-    background-color: cadetblue;
-    position: absolute;
-    top: 50%;
-    left: 85%;
-    transform: translateY(-50%);
-    width: 70%;
-    height: 90%;
-    border: 1px solid #FFFFFF;
-}
 
-#table-3 {
-    background-color: cadetblue;
-    position: absolute;
-    top: 50%;
-    left: 170%;
-    margin-right: 2000px;
-    transform: translate(0% , -50%);
-    width: 70%;
-    height: 90%;
-    border: 1px solid #FFFFFF;
-}
 
 
 

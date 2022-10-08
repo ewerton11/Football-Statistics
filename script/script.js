@@ -83,23 +83,3 @@ colorMode.addEventListener('click' , function() {
         colorMode.style.background = 'white'
     }
 });
-
-
-class NextSection {
-    constructor() {
-        this.left = document.querySelector('.left-arrow');
-        this.firstTable = document.querySelector('#table-1');
-
-
-        this.addClickEvent();
-    }
-
-    addClickEvent() {
-        this.left.addEventListener('click' , ()=> {
-        
-        });
-    }
-
-}
-
-new NextSection();
