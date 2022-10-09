@@ -15,13 +15,6 @@ let colorMode = document.querySelector('.color-system');
 let dark = document.querySelector('.dark-mode');
 let clear = document.querySelector('.clear-mode');
 
-//segundas sessao
-
-let sectionleft = document.querySelector('.left-arrow');
-let sectionright = document.querySelector('.right-arrow')
-let firstTable = document.querySelector('#table-1')
-let mondayTable = document.querySelector('#table-2')
-let thirdTable = document.querySelector('#table-3')
 
 
 menu.addEventListener('click' , ()=> {
@@ -41,45 +34,70 @@ league.addEventListener('click' , ()=> {
 });
 
 var i = 0
-
 colorMode.addEventListener('click' , function() {
 
     let firstelement = document.querySelector('.color-mode');
 
     if(i == 0) {
-
-        ++i
-
-        //modo de estilizar cor temporario
+        i++
 
         firstelement.textContent = 'Clear'
-        dark.style.display = 'none' ;
-        clear.style.display = 'block' ;
-        body.style.background = 'rgb(27, 27, 27)'
-        header.style.color = 'white'
-        header.style.background = 'rgb(27, 27, 27)'
-        menu.style.background = 'rgb(27, 27, 27)'
-        team.style.background = 'rgb(27, 27, 27)'
-        logo.style.background = 'rgb(27, 27, 27)'
-        settings.style.background = 'rgb(27, 27, 27)'
-        league.style.background = 'rgb(27, 27, 27)'
-        colorMode.style.background = 'rgb(27, 27, 27)'
-
     } else {
-
         i = 0
 
         firstelement.textContent = 'Dark'
-        dark.style.display = 'block' ;
-        clear.style.display = 'none' ;
-        body.style.background = 'white'
-        header.style.color = 'black'
-        header.style.background = 'white'
-        menu.style.background = 'white'
-        team.style.background = 'white'
-        logo.style.background = 'white'
-        settings.style.background = 'white'
-        league.style.background = 'white'
-        colorMode.style.background = 'white'
     }
 });
+
+
+//sessao ----------------------------------------------
+
+class Next {
+    constructor() {
+        this.left = document.querySelector('.left-arrow');
+        this.right = document.querySelector('.right-arrow');
+        this.article = document.querySelector('.first-article');
+        this.t1 = document.querySelector('#table-1');
+        this.t2 = document.querySelector('#table-2');
+        this.t3 = document.querySelector('#table-3');
+        this.count = 0
+
+        this.leftSection();
+        this.rightSection();
+    }
+
+
+    leftSection() {
+        this.left.addEventListener('click' , ()=> {
+
+            if(this.count == 1) {
+                this.count--
+
+                this.article.scroll(178 - 178, 0)
+
+            } else if(this.count == 2) {
+                this.count--
+
+                this.article.scroll(1096, 0)
+            }
+        });
+    }
+
+    rightSection() {
+        this.right.addEventListener('click' , ()=> {
+
+            if(this.count == 0) {
+                this.count++
+
+                this.article.scroll(1096, 0)
+
+            } else if(this.count == 1) {
+                this.count++
+
+                this.article.scroll(2192, 0)
+            }
+        });
+    }
+}
+
+const Tables = new Next();
