@@ -73,12 +73,12 @@ class Next {
             if(this.count == 1) {
                 this.count--
 
-                this.article.scroll(178 - 178, 0)
+                this.article.scroll({left: 178 - 178 , behavior: 'smooth'})
 
             } else if(this.count == 2) {
                 this.count--
 
-                this.article.scroll(1096, 0)
+                this.article.scroll({left: 1096, behavior: 'smooth'})
             }
         });
     }
@@ -89,12 +89,12 @@ class Next {
             if(this.count == 0) {
                 this.count++
 
-                this.article.scroll(1096, 0)
+                this.article.scroll({left: 1096, behavior: 'smooth'})
 
             } else if(this.count == 1) {
                 this.count++
 
-                this.article.scroll(2192, 0)
+                this.article.scroll({left: 2192, behavior: 'smooth'})
             }
         });
     }
