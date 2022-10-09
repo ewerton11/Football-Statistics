@@ -445,8 +445,10 @@ header {
 
 #content-top h2 {
     color: rgb(0, 0, 0);
-    position: absolute;
+    position: relative;
     font-family: 'kionaI';
+    font-size: 16px;
+    top: 5vh;
 }
 
 circle {
@@ -468,8 +470,10 @@ circle {
 
 .circle-1 svg , .circle-2 svg , .circle-3 svg {
     position: relative;
-    width: 160px;
-    height: 160px;
+    width: 100px;
+    height: 100px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .c1-1 , .c2-1 , .c3-1 {
@@ -478,7 +482,7 @@ circle {
 }
 
 .c1-2 , .c2-2 , .c3-2 {
-    stroke-dashoffset: calc(440 - 308);
+    stroke-dashoffset: calc(440 - 200);
     stroke: yellow;
 }
 
@@ -509,7 +513,6 @@ circle {
 }
 
 .section-team {
-    background-color: rgba(0, 0, 0, 0.061);
     position: absolute;
     display: flex;
     align-items: center;
