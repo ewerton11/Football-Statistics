@@ -412,7 +412,6 @@ header {
 }
 
 .first-section {
-    background: white url("../imagens/img-fundo.jpg") no-repeat right bottom fixed;
     position: absolute;
     width: 100%;
     height: 30vh;
@@ -513,15 +512,25 @@ circle {
     transform: translate(-50% , -50%);
 }
 
+.listaaa {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 10vh;
+    border: 1px solid  rgb(8, 18, 58);
+}
+
+/*
 .section-team {
     position: absolute;
     display: flex;
     align-items: center;
     list-style: none;
-    top: 42%;
+    top: 50%;
     width: 100%;
     height: 10vh;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.137);
+    border-bottom: 1px solid  rgb(8, 18, 58);
+    border-top: 1px solid  rgb(8, 18, 58);
 }
 
 .section-team li {
@@ -537,15 +546,16 @@ circle {
     width: 100%;
 }
 
+*/
+
 .section-2 {
     position: absolute;
-    top: 50%;
+    top: 60%;
     width: 100%;
     height: 800px;
 }
 
 .first-main {
-    background-color: #FFFFFF;
     position: relative;
     top: 50%;
     left: 50%;
@@ -559,11 +569,12 @@ circle {
     top: 50%;
     left: 0;
     transform: translateY(-50%);
+    border-radius: 50%;
     visibility: hidden;
 }
 
 .left-arrow img {
-    width: 50px;
+    width: 30px;
 }
 
 .right-arrow {
@@ -574,7 +585,7 @@ circle {
 }
 
 .right-arrow img {
-    width: 50px;
+    width: 30px;
 }
 
 .first-article {
@@ -599,7 +610,7 @@ circle {
     min-width: 70%;
     height: 90%;
     margin: 0px 15%;
-    border: 1px solid rgba(0, 0, 0, 0.137);
+    border: 1px solid  rgb(8, 18, 58);
 }
 
 #table-1 h1 , #table-2 h1 , #table-3 h1 {
