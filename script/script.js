@@ -73,12 +73,15 @@ class Next {
             if(this.count == 1) {
                 this.count--
 
-                this.article.scroll({left: 178 - 178 , behavior: 'smooth'})
+                this.article.scroll({left: 178 - 178 , behavior: 'smooth'});
+                this.left.style.visibility = 'hidden' ;
 
             } else if(this.count == 2) {
                 this.count--
 
-                this.article.scroll({left: 1096, behavior: 'smooth'})
+                this.article.scroll({left: 1096, behavior: 'smooth'});
+                this.left.style.visibility = 'visible' ;
+                this.right.style.visibility = 'visible' ;
             }
         });
     }
@@ -90,11 +93,14 @@ class Next {
                 this.count++
 
                 this.article.scroll({left: 1096, behavior: 'smooth'})
+                this.left.style.visibility = 'visible' ;
 
             } else if(this.count == 1) {
                 this.count++
 
                 this.article.scroll({left: 2192, behavior: 'smooth'})
+                this.left.style.visibility = 'visible' ;
+                this.right.style.visibility = 'hidden' ;
             }
         });
     }
