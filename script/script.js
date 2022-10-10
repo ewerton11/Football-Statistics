@@ -1,19 +1,10 @@
-let body = document.querySelector('body');
-let header = document.querySelector('header');
-
 let menu = document.querySelector('.menu-box-1');
 let xnavbar = document.querySelector('.x-menu')
 let navmenu = document.querySelector('#nav-menu');
-let team = document.querySelector('.choose-team');
 
 let logo = document.querySelector('.box-2');
 
-let settings = document.querySelector('.settings-nav');
-let league = document.querySelector('.league');
-
 let colorMode = document.querySelector('.color-system');
-let dark = document.querySelector('.dark-mode');
-let clear = document.querySelector('.clear-mode');
 
 
 
@@ -27,10 +18,6 @@ xnavbar.addEventListener('click' , ()=> {
 
 logo.addEventListener('click' , ()=> {
     document.location.reload(true);
-});
-
-league.addEventListener('click' , ()=> {
-    console.log('clicou')
 });
 
 var i = 0
@@ -50,8 +37,6 @@ colorMode.addEventListener('click' , function() {
 });
 
 
-//sessao ----------------------------------------------
-
 class Next {
     constructor() {
         this.left = document.querySelector('.left-arrow');
@@ -67,12 +52,12 @@ class Next {
     }
 
 
+
     leftSection() {
         this.left.addEventListener('click' , ()=> {
 
             if(this.count == 1) {
                 this.count--
-
                 this.article.scroll({left: 178 - 178 , behavior: 'smooth'});
                 this.left.style.visibility = 'hidden' ;
 
