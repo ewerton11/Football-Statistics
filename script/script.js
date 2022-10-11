@@ -44,9 +44,6 @@ class Next {
         this.left = document.querySelector('.left-arrow');
         this.right = document.querySelector('.right-arrow');
         this.article = document.querySelector('.section-slide');
-        this.t1 = document.querySelector('#table-1');
-        this.t2 = document.querySelector('#table-2');
-        this.t3 = document.querySelector('#table-3');
         this.width = widthClass;
         this.count = 0
 
