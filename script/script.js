@@ -36,19 +36,23 @@ colorMode.addEventListener('click' , function() {
     }
 });
 
+let sSlide = document.querySelector('.section-slide');
+let widthClass = sSlide.getBoundingClientRect().width;
 
 class Next {
     constructor() {
         this.left = document.querySelector('.left-arrow');
         this.right = document.querySelector('.right-arrow');
-        this.article = document.querySelector('.first-article');
+        this.article = document.querySelector('.section-slide');
         this.t1 = document.querySelector('#table-1');
         this.t2 = document.querySelector('#table-2');
         this.t3 = document.querySelector('#table-3');
+        this.width = widthClass;
         this.count = 0
 
         this.leftSection();
         this.rightSection();
+        
     }
 
 
@@ -58,13 +62,14 @@ class Next {
 
             if(this.count == 1) {
                 this.count--
-                this.article.scroll({left: 178 - 178 , behavior: 'smooth'});
+
+                this.article.scrollBy( - this.width , 0);
                 this.left.style.visibility = 'hidden' ;
 
             } else if(this.count == 2) {
                 this.count--
 
-                this.article.scroll({left: 1096, behavior: 'smooth'});
+                this.article.scrollBy( - this.width , 0);
                 this.left.style.visibility = 'visible' ;
                 this.right.style.visibility = 'visible' ;
             }
@@ -77,13 +82,13 @@ class Next {
             if(this.count == 0) {
                 this.count++
 
-                this.article.scroll({left: 1096, behavior: 'smooth'})
+                this.article.scrollBy(this.width , 0);
                 this.left.style.visibility = 'visible' ;
 
             } else if(this.count == 1) {
                 this.count++
 
-                this.article.scroll({left: 2192, behavior: 'smooth'})
+                this.article.scrollBy(this.width , 0);
                 this.left.style.visibility = 'visible' ;
                 this.right.style.visibility = 'hidden' ;
             }
