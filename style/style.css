@@ -14,6 +14,9 @@
 * {
     margin: 0;
     padding: 0;
+    border: none;
+    background: none;
+    list-style: none;
 }
 
 body {
@@ -569,12 +572,76 @@ circle {
     min-width: 80vw;
     height: 90vh;
     margin: 0px 4vw;
-    border: 1px solid  rgb(8, 18, 58);
+    border: 1px solid rgb(0, 0, 0);
 }
 
 #table-1 h1 , #table-2 h1 , #table-3 h1 {
     text-align: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.137);
+    font-weight: bold;
     font-size: 16px;
     font-family: 'kionaI', arial, sans-serif;
-    margin-top: 2vh;
+    padding: 1vh 0px;
+}
+
+#team-t1 {
+    position: absolute;
+    top: 0px;
+    left: 2vw;
+    padding: 1vh 0px;
+    font-weight: bold;
+    font-family: 'kionaI', arial , sans-serif;
+}
+
+.team-t1 {
+    position: absolute;
+    display: flex;
+    text-align: center;
+    font-size: 10px;
+    font-family: 'kionaI' , arial , sans-serif;
+    width: 10vw;
+    height: 30vh;
+    flex-direction: column;
+    justify-content: space-around;
+    display: none;
+}
+
+.team-t1 li:hover {
+    font-size: 16px;
+}
+
+#types-t1 {
+    position: absolute;
+    top: 0vh;
+    left: 8vw;
+    padding: 1vh 0px;
+    font-weight: bold;
+    font-family: 'kionaI', arial , sans-serif;
+}
+
+.types-t1 {
+    position: absolute;
+    display: flex;
+    left: 6vw;
+    text-align: center;
+    font-size: 10px;
+    font-family: 'kionaI' , arial , sans-serif;
+    width: 10vw;
+    height: 30vh;
+    flex-direction: column;
+    justify-content: space-around;
+    display: none;
+}
+
+.types-t1 li:hover {
+    font-size: 16px;
+}
+
+#chart-t1 {
+    position: absolute;
+    width: 100%;
+    height: 94%;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
 }
