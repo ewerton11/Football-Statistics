@@ -19,7 +19,7 @@ const labels = [
       borderColor: 'rgb(8, 18, 58)',
       borderWidth: 3,
       categoryPercentage: 0.3,
-      data: [1, 1, 5, 2, 0, 3, 4, 0, 2, 5],
+      data: [1, 1, 5, 2, 0, 3, 4, 0, 2, 5]
     }]
   };
 
@@ -37,7 +37,16 @@ const labels = [
               grid: {
                 display: false,
               },
+            },
+            y: {
+              grid: {
+                drawBorder: false
+              },
+              min: 0,
+              ticks: {
+                stepSize: 1
             }
+          }
         }
     }
   };
