@@ -25,27 +25,27 @@ html {
 * {
     margin: 0;
     padding: 0;
-    border: none;
     background: none;
+    border: none;
     list-style: none;
+    outline: none;
 }
 
 body {
     overflow-x: hidden;
-    font-size: 1.6rem;
 }
 
 header {
+    z-index: 5;
+    width: 100%;
+    height: 10vh;
     background-color: rgb(255, 255, 255);
     border: 1px solid rgba(0, 0, 0, 0.137);
     position: fixed;
+    top: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    top: 0;
-    width: 100%;
-    height: 10vh;
-    z-index: 5;
     overflow: hidden;
 }
 
@@ -54,23 +54,18 @@ header {
 }
 
 .menu-box-1 {
-    background-color: rgb(255, 255, 255);
     width:7vw;
     height: 10vh;
     border-right: 1px solid rgba(0, 0, 0, 0.137);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .menu-box-1 button {
-    position: relative;
-    background: none;
     font-family: arial, sans-serif;
     font-size: 1.6rem;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    border: none;
     cursor: pointer;
-    transition: .2s;
 }
 
 .menu-box-1 button:hover {
@@ -78,24 +73,39 @@ header {
 }
 
 .choose-team {
-    background-color: rgb(255, 255, 255);
     width: 11vw;
-    height: 10vh; 
+    height: 10vh;
+    display: flex;
+    align-items: center; 
 }
 
 .select-team {
-    position: relative;
-    display: flex;
-    align-items: center;
-    top: 50%;
-    left: 10px;
-    transform: translate(0, -50%);
-    width: 2.5vw;
-    height: 5vh;
+    width: 35px;
+    height: 35px;
     border-right: 5px solid rgba(0, 0, 0, 0.137);
     border-bottom: 1px solid rgba(0, 0, 0, 0.137);
     border-radius: 40px;
+    position: relative;
+    left: 10px;
+    display: flex;
+    align-items: center;
     cursor: pointer;
+    transition: .5s;
+}
+
+.select-team img {
+    width: 32px;
+    padding-left: 2px;
+}
+
+.input-team {
+    width: 0;
+    display: none;
+    margin: 0px 5px;
+    color: black;
+    text-align: center;
+    font-size: 1.6rem;
+    line-height: 2rem;
     transition: .5s;
 }
 
@@ -108,28 +118,23 @@ header {
     display: block;
 }
 
-.select-team img {
-    width: 30px;
-    padding-left: 2px
-}
+@media (max-width: 1040px) {
+    .select-team {
+        width: 10vw;
+        transition: .5s;
+    }
 
-.input-team {
-    background: none;
-    border: none;
-    outline: none;
-    display: none;
-    padding: 0;
-    width: 0;
-    margin: 0px 5px;
-    color: black;
-    text-align: center;
-    font-size: 1.6rem;
-    line-height: 2rem;
-    transition: .5s;
+    .select-team img {
+        display: none;
+    }
+
+    .input-team {
+        width: 100%;
+        display: block;
+    }
 }
 
 .box-2 {
-    background-color: rgb(255, 255, 255);
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -143,26 +148,39 @@ header {
 }
 
 .settings-nav {
-    background-color: rgb(255, 255, 255);
     width: 11vw;
     height: 10vh;
+    display: flex;
+    justify-content: right;
+    align-items: center;
 }
 
 .search-header {
-    position: relative;
-    display: flex;
-    float: right;
-    justify-content: center;
-    align-items: center;
-    top: 50%;
-    right: 10px;
-    transform: translate(0, -50%);
-    width: 2.5vw;
-    height: 5vh;
+    width: 35px;
+    height: 35px;
     border-left: 5px solid rgba(0, 0, 0, 0.137);
     border-bottom: 1px solid rgba(0, 0, 0, 0.137);
     border-radius: 40px;
+    position: relative;
+    right: 10px;
+    display: flex;
+    align-items: center;
     cursor: pointer;
+    transition: .5s;
+}
+
+.search-header img {
+    width: 25px;
+}
+
+.input-search {
+    width: 0;
+    display: none;
+    margin: 0px 5px;
+    color: black;
+    text-align: center;
+    font-size: 1.6rem;
+    line-height: 2rem;
     transition: .5s;
 }
 
@@ -175,43 +193,35 @@ header {
     display: block;
 }
 
-.search-header img {
-    width: 25px;
-}
+@media (max-width: 1040px) {
+    .search-header {
+        width: 10vw;
+        transition: .5s;
+    }
 
-.search-header input {
-    background: none;
-    border: none;
-    outline: none;
-    display: none;
-    padding: 0;
-    width: 0;
-    margin: 0px 5px;
-    color: black;
-    text-align: center;
-    font-size: 1.6rem;
-    line-height: 2rem;
-    transition: .5s;
+    .search-header img {
+        display: none;
+    }
+
+    .input-search {
+        width: 100%;
+        display: block;
+    }
 }
 
 .league {
-    background-color: rgb(255, 255, 255);
     width: 7vw;
     height: 10vh;
     border-left: 1px solid rgba(0, 0, 0, 0.137);
+    display: flex;
+    justify-content: center;
 }
 
 .league button {
     position: relative;
-    background: none;
     font-family: arial, sans-serif;
     font-size: 1.6rem;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    border: none;
     cursor: pointer;
-    transition: .2s;
 }
 
 .league button:hover {
@@ -224,25 +234,23 @@ header {
 }
 
 .championships {
-    background-color: rgb(255, 255, 255);
-    position: fixed;
     z-index: 4;
+    width: 250px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgba(0, 0, 0, 0.137);
+    position: fixed;
     top: 10vh;
     right: 0px;
-    width: 250px;
-    height: 0vh;
     visibility: hidden;
-    border: 1px solid rgba(0, 0, 0, 0.137);
     overflow-y: auto;
     overflow-x: hidden;
 }
 
 .championships ul {
-    position: absolute;
-    display: flex;
-    list-style: none;
     width: 100%;
     height: 100%;
+    position: relative;
+    display: flex;
     flex-direction: column;
 }
 
@@ -281,6 +289,7 @@ header {
 
 .color-mode {
     position: relative;
+    display: flex;
     left: 15px;
     font-family: arial, sans-serif;
     font-size: 1.6rem;
@@ -300,6 +309,15 @@ header {
     display: block;
 }
 
+@media (max-width: 1040px) {
+    .color-mode {
+        left: 5px;
+    }
+    .dark-mode {
+        left: 10px;
+    }
+}
+
 .clear-mode {
     position: relative;
     left: 20px;
@@ -317,7 +335,6 @@ header {
 }
 
 .language {
-    background: none;
     position: relative;
     justify-content: space-around;
     top: 50%;
@@ -325,14 +342,11 @@ header {
     transform: translateY(-50%);
     width: 6vw;
     height: 5vh;
-    border: none;
     border-bottom: 1px solid rgba(0, 0, 0, 0.205);
     transition: .5s;
 }
 
 .indicator { 
-    background: none;
-    border: none;
     position: relative;
     top: 2px;
     right: 30px;
@@ -354,8 +368,6 @@ header {
 }
 
 .x-menu {
-    background: none;
-    border: none;
     position: relative;
     float: right;
     top: 50%;
@@ -393,9 +405,6 @@ header {
 .nav-menu.active ul , .nav-menu ul {
     position: absolute;
     display: block;
-    margin: 0;
-    padding: 0;
-    list-style: none;
     top: 50px;
     width: 100%;
     height: 100%;
