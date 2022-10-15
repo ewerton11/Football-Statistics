@@ -70,8 +70,7 @@ header {
     align-items: center;
 }
 
-.menu-box-1 
-button {
+.menu-box-1 button {
     font-family: arial, sans-serif;
     font-size: 1.6rem;
     font-weight: bold;
@@ -95,8 +94,7 @@ button {
     }
 }
 
-.menu-box-1 
-button:hover {
+.menu-box-1 button:hover {
     color: rgba(0, 0, 0, 0.774);
 }
 
@@ -121,8 +119,7 @@ button:hover {
     transition: .5s;
 }
 
-.select-team 
-img {
+.select-team img {
     width: 32px;
     padding-left: 2px;
 }
@@ -170,7 +167,7 @@ img {
         display: none;
     }
 }
-/*-------------------------------------*/
+
 .nav-menu {
     transform: translateX(-100%);
     transition: .5s;
@@ -238,8 +235,7 @@ img {
     height: 3vh;
 }
 
-.language 
-img {
+.language img {
     width: 50%;
 }
 
@@ -278,8 +274,7 @@ img {
     align-items: center;
 }
 
-.nav-menu.active 
-li:hover {
+.nav-menu.active li:hover {
     background-color: rgba(0, 0, 0, 0.11);
 }
 
@@ -308,7 +303,6 @@ li:hover {
     letter-spacing: 2px;
     text-transform: uppercase;
 }
-/*--------------------------------*/
 
 .box-2 {
     position: absolute;
@@ -380,7 +374,8 @@ li:hover {
     width: 10vw;
 }
 
-.search-header .input-search {
+.search-header 
+.input-search {
     width: 100%;
     display: block;
 }
@@ -434,7 +429,8 @@ li:hover {
     color: rgba(0, 0, 0, 0.774);
 }
 
-.league:hover .championships {
+.league:hover 
+.championships {
     height: 90vh;
     visibility: visible;
 }
@@ -561,112 +557,133 @@ li:hover {
 }
 
 .first-section {
-    position: relative;
     width: 100%;
     height: 30vh;
+    position: relative;
     margin-top: 10vh;
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 500px) {
+    .first-section {
+        margin-top: 7vh;
+    }
 }
 
 .last-update {
     position: absolute;
-    display: flex;
-    top: 5vh;
+    top: 3vh;
     left: 2vw;
+    display: flex;
 }
 
 .last-update h2 {
-    color: rgb(255, 255, 255);
     font-family: 'kionaI' , arial, sans-serif;
-    font-size: 10px;
+    font-size: 1rem;
 }
 
 #update-schedule {
-    color: #ffffff;
+    padding-left: .5rem;
     font-family: 'kionaI' , arial, sans-serif;
-    font-size: 10px;
-    padding: 0px 5px;
+    font-size: 1rem;
+}
+
+@media (max-width: 600px) {
+    .last-update {
+        display: block;
+    }
+}
+@media (max-width: 500px) {
+    .last-update h2 ,
+    #update-schedule {
+        font-size: .5rem;
+    }
 }
 
 #content-top {
+    width: 100vw;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    color: #000000;
 }
 
 #content-top h2 {
-    color: rgb(0, 0, 0);
     position: relative;
+    top: 5vh;
     font-family: 'kionaI';
     font-size: 1.6rem;
-    top: 5vh;
 }
 
 circle {
     fill: none;
-    stroke: black;
     stroke-width: 5px;
     stroke-dasharray: 440;
     stroke-dashoffset: 440;
 }
 
 .circle-1 {
-    position: absolute;
-    width: 160px;
-    height: 160px;
-    top: 50%;
-    left: 35%;
-    transform: translate(-50% , -50%);
+    width: 15vw;
+    height: 26vh;
+    position: relative;
+    margin-right: 2vw;
 }
 
-.circle-1 svg , .circle-2 svg , .circle-3 svg {
+.circle-1 svg ,
+.circle-2 svg ,
+.circle-3 svg {
+    width: 7vw;
+    height: 15vh;
     position: relative;
-    width: 100px;
-    height: 100px;
     top: 50%;
     transform: translateY(-50%);
 }
 
-.c1-1 , .c2-1 , .c3-1 {
+.c1-1 ,
+.c2-1 ,
+.c3-1 {
     stroke-dashoffset: 0;
     stroke: rgba(110, 110, 110, 0.461);
 }
 
-.c1-2 , .c2-2 , .c3-2 {
+.c1-2 ,
+.c2-2 ,
+.c3-2 {
     stroke-dashoffset: calc(440 - 200);
     stroke: rgb(8, 18, 58);
 }
 
 .circle-2 {
-    position: absolute;
-    width: 160px;
-    height: 160px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50% , -50%);
+    width: 15vw;
+    height: 26vh;
+    position: relative;
+    margin-right: 2vw;
 }
 
 .circle-3 {
-    position: absolute;
-    width: 160px;
-    height: 160px;
-    top: 50%;
-    left: 65%;
-    transform: translate(-50% , -50%);
+    width: 15vw;
+    height: 26vh;
+    position: relative;
 }
 
-#c1 , #c2 , #c3 {
+#c1 ,
+#c2 ,
+#c3 {
     position: absolute;
-    font-size: 2rem;
     top: 50%;
     left: 50%;
     transform: translate(-50% , -50%);
+    font-size: 2rem;
 }
 
 .listaaa {
-    position: relative;
-    margin-top: 10vh;
     width: 100%;
     height: 10vh;
     border: 1px solid  rgb(8, 18, 58);
+    position: relative;
+    margin-top: 10vh;
 }
 
 .first-article {
@@ -823,11 +840,4 @@ circle {
 .types-t1 li:hover {
     background-color:rgba(0, 0, 0, 0.137);
     font-weight: bold;
-}
-
-#chart-t1 {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 0;
 }
