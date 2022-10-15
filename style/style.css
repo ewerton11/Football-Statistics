@@ -89,7 +89,7 @@ header {
 @media (max-width: 500px) {
     .menu-box-1 {
         width: 20vw;
-        position: absolute;
+        height: 7vh;
     }
 }
 
@@ -161,7 +161,9 @@ header {
     }
 }
 @media (max-width: 500px) {
-    
+    .choose-team {
+        display: none;
+    }
 }
 
 .box-2 {
@@ -184,6 +186,21 @@ header {
     display: flex;
     justify-content: right;
     align-items: center;
+}
+
+.lupa-mobile {
+    display: none;
+}
+
+@media (max-width: 500px) {
+    .settings-nav {
+        height: 7vh;
+    }
+    .lupa-mobile {
+        width: 50%;
+        margin-right: 5vw;
+        display: block;
+    }
 }
 
 .search-header {
@@ -256,7 +273,9 @@ header {
     }
 }
 @media (max-width: 500px) {
-    
+    .search-header {
+        display: none;
+    }
 }
 
 .league button {
