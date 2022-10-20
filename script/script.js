@@ -1,5 +1,5 @@
 let menu = document.querySelector('.menu-box-1');
-let xnavbar = document.querySelector('.x-menu')
+let xnavbar = document.querySelector('.x-menu');
 let navmenu = document.querySelector('#nav-menu');
 
 let logo = document.querySelector('.box-2');
@@ -7,14 +7,30 @@ let logo = document.querySelector('.box-2');
 let colorMode = document.querySelector('.color-system');
 
 
+class MenuActive {
+    constructor() {
+        this.menu = document.querySelector('.menu-box-1');
+        this.navMenu = document.querySelector('#nav-menu');
 
-menu.addEventListener('click' , ()=> {
-    navmenu.classList.toggle("active");
-});
+        this.openMenu()
+        this.closeMenu()
+    }
 
-xnavbar.addEventListener('click' , ()=> {
-    navmenu.classList.toggle("active");
-});
+    openMenu() {
+        this.menu.addEventListener('click' , ()=> {
+            this.navMenu.classList.toggle('active');
+        })
+    }
+
+    closeMenu() {
+        this.navMenu.addEventListener('click' , ()=> {
+            this.navMenu.classList.remove('active');
+        })
+    }
+
+}
+
+const navBar = new MenuActive()
 
 logo.addEventListener('click' , ()=> {
     document.location.reload(true);
